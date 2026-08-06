@@ -3821,3 +3821,152 @@ a {
   font-style: normal;
   font-display: swap;
 }
+
+.section-holders {
+  background: var(--neutral-3);
+  padding: 7rem 0;
+}
+
+.holders-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.holders-heading {
+  max-width: 760px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.holders-eyebrow {
+  margin-bottom: .75rem;
+  color: var(--orange-primary);
+  font-size: .875rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.holders-intro {
+  margin-top: 1.25rem;
+  color: var(--gray-75);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.holders-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.holders-highlight {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-light-gray);
+  border-radius: 1rem;
+  background: #fff;
+  text-align: center;
+}
+
+.holders-highlight strong {
+  color: var(--orange-primary);
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.holders-highlight span {
+  color: var(--gray-75);
+  line-height: 1.45;
+}
+
+.holders-methodology {
+  max-width: 940px;
+  margin: 0 auto 1.5rem;
+  color: var(--gray-75);
+  font-size: .875rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.holders-table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--border-light-gray);
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 18px 48px rgba(19, 19, 19, .06);
+}
+
+.holders-table {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+.holders-table th,
+.holders-table td {
+  padding: 1rem 1.125rem;
+  border-bottom: 1px solid var(--neutral-7);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.holders-table th {
+  background: var(--gray-100);
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.holders-table th:first-child,
+.holders-table td:first-child {
+  text-align: left;
+}
+
+.holders-table td {
+  color: var(--gray-95);
+  font-size: .875rem;
+}
+
+.holders-table td:first-child {
+  font-family: monospace;
+  font-size: .8rem;
+}
+
+.holders-table td:last-child {
+  font-weight: 700;
+}
+
+.holders-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.holders-table tbody tr:hover {
+  background: var(--orange-light);
+}
+
+.holders-table a:hover {
+  color: var(--orange-primary);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .section-holders {
+    padding: 4.5rem 0;
+  }
+
+  .holders-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .holders-heading h2 {
+    font-size: 2.25rem;
+  }
+}
